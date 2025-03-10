@@ -1,0 +1,12 @@
+.activebutton{
+    background: #FF1F3D;
+    color: white;
+    border-radius: 8px;
+}
+
+.hover1:hover{
+    color: blue;
+    background-color: yellow;
+    border-radius: 8px;
+    padding: 0px 5px;
+}
