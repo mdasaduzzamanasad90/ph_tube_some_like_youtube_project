@@ -68,7 +68,7 @@ const displayvideo = (video) => {
     videofiled.classList.remove("grid");
     videofiled.innerHTML = `
     <div class ="flex flex-col gap-5 justify-center items-center mt-20 lg:mt-32">
-    <img src="resources/icon.png"/>
+    <img src="resources/icon.png" alt="">
     <h1 class="font-bold text-xl lg:text-3xl text-center">Oops!! Sorry, There is no content here</h1>
     </div>
     `
