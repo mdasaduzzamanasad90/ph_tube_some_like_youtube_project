@@ -47,8 +47,8 @@ const displaycategories = (categories) => {
 };
 
 // api video
-const loadvideo = () => {
-  fetch("https://openapi.programming-hero.com/api/phero-tube/videos")
+const loadvideo = (text = "")  => {
+  fetch(`https://openapi.programming-hero.com/api/phero-tube/videos?title=${text}`)
     .then((res) => res.json())
     .then((data) => {
       removeactive();
@@ -139,6 +139,12 @@ const displaydetiles = (v) =>{
   document.getElementById('custommodel').showModal();
 
 }
+
+// search bar add search function
+document.getElementById("textfield").addEventListener("keyup",(e)=>{
+  loadvideo(e.target.value);
+})
+
 
 loadcategories();
 loadvideo();
